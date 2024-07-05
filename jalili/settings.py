@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'applicants',
     'providers',
+    'location_field.apps.DefaultConfig',
 ]
 
 MIDDLEWARE = [
