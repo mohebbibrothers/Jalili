@@ -1,0 +1,122 @@
+@font-face {
+	font-family: 'Vazir-Bold-FD-WOL';
+	src: url('../fonts/vazir-font-v16.1.0/Vazir-Bold-FD-WOL.eot') format('eot'), url('../fonts/vazir-font-v16.1.0/Vazir-Bold-FD-WOL.ttf') format('ttf'), url('../fonts/vazir-font-v16.1.0/Vazir-Bold-FD-WOL.woff') format('woff'), url('../fonts/vazir-font-v16.1.0/Vazir-Bold-FD-WOL.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Vazir-FD-WOL';
+	src: url('../fonts/vazir-font-v16.1.0/Vazir-FD-WOL.eot') format('eot'), url('../fonts/vazir-font-v16.1.0/Vazir-FD-WOL.ttf') format('ttf'), url('../fonts/vazir-font-v16.1.0/Vazir-FD-WOL.woff') format('woff'), url('../fonts/vazir-font-v16.1.0/Vazir-FD-WOL.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Vazir-Light-FD-WOL';
+	src: url('../fonts/vazir-font-v16.1.0/Vazir-Light-FD-WOL.eot') format('eot'), url('../fonts/vazir-font-v16.1.0/Vazir-Light-FD-WOL.ttf') format('ttf'), url('../fonts/vazir-font-v16.1.0/Vazir-Light-FD-WOL.woff') format('woff'), url('../fonts/vazir-font-v16.1.0/Vazir-Light-FD-WOL.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Vazir-Medium-FD-WOL';
+	src: url('../fonts/vazir-font-v16.1.0/Vazir-Medium-FD-WOL.eot') format('eot'), url('../fonts/vazir-font-v16.1.0/Vazir-Medium-FD-WOL.ttf') format('ttf'), url('../fonts/vazir-font-v16.1.0/Vazir-Medium-FD-WOL.woff') format('woff'), url('../fonts/vazir-font-v16.1.0/Vazir-Medium-FD-WOL.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Vazir-Thin-FD-WOL';
+	src: url('../fonts/vazir-font-v16.1.0/Vazir-Thin-FD-WOL.eot') format('eot'), url('../fonts/vazir-font-v16.1.0/Vazir-Thin-FD-WOL.ttf') format('ttf'), url('../fonts/vazir-font-v16.1.0/Vazir-Thin-FD-WOL.woff') format('woff'), url('../fonts/vazir-font-v16.1.0/Vazir-Thin-FD-WOL.woff2') format('woff2');
+}
+
+body{
+    font-family: 'Vazir-FD-WOL';
+	background: linear-gradient(to right, #a09c9c, #666966, #414241);
+}
+footer > div > p{
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+.titr_font, p{
+	font-family: 'Vazir-Bold-FD-WOL';
+}
+p{
+	color: white;
+}
+.right{
+	text-align: right;
+	direction: rtl;
+}
+.header_font{
+	font-weight: bolder;
+}
+li:hover{
+	transform: scale(1.2);	
+}
+header > ul > li:nth-child(1) > a{
+	color: #3cff00 !important;
+}
+header > ul > li:nth-child(2) > a{
+	color: #ffffff !important;
+}
+header > ul > li:nth-child(3) > a{
+	color: #ff0000 !important;
+}
+header{
+	direction: rtl;
+    text-align: right;
+	background: linear-gradient(to right, #3d3939, #232523, #3d3939);
+	color: linear-gradient(to right, #ff0000, #fefffe, #3cff00);
+	display: flex;
+	max-width: 100%;
+	border-bottom-left-radius: 40%;
+	border-bottom-right-radius: 40%;
+}
+.active{
+	background-color: #ffffff13 !important;
+}
+#finger{
+	height: 50px;
+}
+.center{
+	align-items: center;
+	text-align: center;
+}
+.half-width-right {
+	width: 50%;
+    margin-right: 2%;
+	direction: rtl;
+}
+.white-oval {
+	width: 33%;
+	margin: 7%;
+	direction: rtl;
+}
+
+.green-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #5C8269;
+	color: white;
+	text-decoration: none;
+	margin-top: 10px;
+	border-radius: 5px;
+	width: 100%;
+}
+#khamenei{
+	width: 250px;
+	aspect-ratio: 1;
+	object-fit: cover;
+	--_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+	-webkit-mask-box-image: var(--_m);
+			   mask-border: var(--_m);
+	clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  }
+  
+  /* fallback until better support for mask-border */
+@supports not (-webkit-mask-box-image: var(--_m)) { 
+#khamenei{
+	 --_m:
+	   radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+	   radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+	   linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+	 -webkit-mask: var(--_m);
+			 mask: var(--_m);
+	}
+}
+.icons{
+    width: 3vw;
+    transition: 0.3s;
+}
+.icons:hover{
+    transform: rotate(360deg);
+}
